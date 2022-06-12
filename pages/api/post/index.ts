@@ -1,9 +1,11 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import connect from "../../../services/connectMongo";
 import PostModel from "../../../model/Post";
+
+connect();
+
 export default async function Post(req: NextApiRequest, res: NextApiResponse) {
     const { method } = req;
-    await connect();
     switch (method) {
         case "GET":
             try {
