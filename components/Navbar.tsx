@@ -1,10 +1,5 @@
 import React from "react";
-import {
-    FaFacebook,
-    FaSearch,
-    FaHome,
-    FaFacebookMessenger,
-} from "react-icons/fa";
+import { FaFacebook, FaSearch, FaHome, FaFacebookMessenger } from "react-icons/fa";
 import { CgMenuGridO } from "react-icons/cg";
 import { IoMdNotifications } from "react-icons/io";
 import { MdOutlineArrowDropDown } from "react-icons/md";
@@ -23,30 +18,15 @@ export default function Navbar() {
                         className="ml-2 h-[40px] pl-8 rounded-3xl w-[40px] bg-gray-500 focus:outline-none
                            lg:w-[240px]"
                     />
-                    <FaSearch
-                        className="absolute top-[13px] ml-5 hi"
-                        color="#cccccc"
-                    />
+                    <FaSearch className="absolute top-[13px] ml-5 hi" color="#cccccc" />
                 </div>
                 <div className=""></div>
             </div>
             <div className="flex items-center justify-between w-6/12">
-                <FaHome
-                    className="text-2xl hover:bg-gray-500 block w-1/5"
-                    color="#0570e6"
-                />
-                <FaHome
-                    className="text-2xl hover:bg-gray-500 hover:block w-1/5"
-                    color="#0570e6"
-                />
-                <FaHome
-                    className="text-2xl hover:bg-gray-500 hover:block w-1/5"
-                    color="#0570e6"
-                />
-                <FaHome
-                    className="text-2xl hover:bg-gray-500 hover:block w-1/5"
-                    color="#0570e6"
-                />
+                <FaHome className="text-2xl hover:bg-gray-500 block w-1/5" color="#0570e6" />
+                <FaHome className="text-2xl hover:bg-gray-500 hover:block w-1/5" color="#0570e6" />
+                <FaHome className="text-2xl hover:bg-gray-500 hover:block w-1/5" color="#0570e6" />
+                <FaHome className="text-2xl hover:bg-gray-500 hover:block w-1/5" color="#0570e6" />
                 <FaHome
                     className="text-2xl hover:bg-gray-500 hover:block w-1/5 hidden"
                     color="#0570e6"
@@ -59,9 +39,7 @@ export default function Navbar() {
                         alt=""
                         className="h-8 w-8 rounded-full"
                     />
-                    <span className="text-medium font-bold text-white ml-1">
-                        Hải
-                    </span>
+                    <span className="text-medium font-bold text-white ml-1">Hải</span>
                 </div>
                 <div className="flex items-center space-x-2">
                     <CgMenuGridO
