@@ -1,10 +1,11 @@
 import React from "react";
-import {
-    BsCameraVideo,
-    BsImages,
-    BsFillEmojiLaughingFill,
-} from "react-icons/bs";
+import { BsCameraVideo, BsImages, BsFillEmojiLaughingFill } from "react-icons/bs";
 
+const color = {
+    liveVideo: "crimson",
+    image: "green",
+    emoji: "yellow",
+};
 export default function Status() {
     return (
         <div>
@@ -28,25 +29,16 @@ export default function Status() {
                         "flex items-center cursor-pointer hover:bg-gray-500 hover:rounded-md"
                     }
                 >
-                    <BsCameraVideo color={"crimson"} className={"text-2xl"} />
-                    <span className={"font-bold text-stone-100 ml-2 "}>
-                        Video trực tiếp
-                    </span>
+                    <BsCameraVideo color={color.liveVideo} className={"text-2xl"} />
+                    <span className={"font-bold text-stone-100 ml-2 "}>Video trực tiếp</span>
                 </div>
                 <div className={"flex items-center"}>
-                    <BsImages color={"green"} className={"text-2xl"} />
-                    <span className={"font-bold text-stone-100 ml-2"}>
-                        Ảnh/video
-                    </span>
+                    <BsImages color={color.image} className={"text-2xl"} />
+                    <span className={"font-bold text-stone-100 ml-2"}>Ảnh/video</span>
                 </div>
                 <div className={"flex items-center"}>
-                    <BsFillEmojiLaughingFill
-                        color={"yellow"}
-                        className={"text-2xl"}
-                    />
-                    <span className={"font-bold text-stone-100 ml-2"}>
-                        Cảm xúc/hoạt động
-                    </span>
+                    <BsFillEmojiLaughingFill color={color.emoji} className={"text-2xl"} />
+                    <span className={"font-bold text-stone-100 ml-2"}>Cảm xúc/hoạt động</span>
                 </div>
             </div>
         </div>
